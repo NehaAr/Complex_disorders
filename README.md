@@ -2,13 +2,14 @@
 This repository contains different computational approaches to be used in studying complex disorders
 
 #Association Studies Method Comparison
+# Comparison after 10 replicates
 ```
 1. Traditional GWAS= GLM(single-SNP association standard Generalised Linear Regression)
 2. Polygenic versions of GWAS=MLM,MLMM,CMLM,BLINK(Multi -SNP association )
 ```
-![Comparison between different GWAS methods](/graphs/comparison_graph.png)
+![Comparison between different GWAS methods after 10 replicates](/graphs/comparison_graph.png)
 
-Comparison after 10 replicates
+
 
 | Method      | Power Analysis                | FDR Handling                                | Characteristics                                                                                                       |
 | ----------- | ---------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -20,3 +21,6 @@ Comparison after 10 replicates
 | **BLINK**   | High (0.6 → 0.9)             | Good                                        | Bayesian-information and LD Iteratively Nested Keyway computational efficiency                                      |
 | **SUPER**   | Moderate → high (0.2 → 0.95) | Very good                                   | Settlement of Multiple Effects Using Regression in SUPER GWAS when used with FAST-LLM, improves power for large-scale GWAS |
 
+# Comparison after 20 replicates
+
+![Comparison between different GWAS methods after 20 replicates](/graphs/comp2.png)
