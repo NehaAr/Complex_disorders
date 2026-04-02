@@ -1,0 +1,26 @@
+# Models that can be supplied as input
+# FarmCPU,MLM,MLMM,BLINK,SUPER,GLM,CMLM
+# Example usage: Rscript gwas_model.R FarmCPU BLINK
+
+
+source("http://zzlab.net/GAPIT/gapit_functions.txt")
+args=commandArgs(trailingOnly = TRUE)
+if (length(args)<1) {
+  stop("No model supplied")
+}
+models<-args
+cat("Running GAPIT with models:", paste(models, collapse = ", "), "\n")
+
+myY <- read.table("http://zzlab.net/GAPIT/data/mdp_traits.txt", head = TRUE)
+yGD=read.table(file="http://zzlab.net/GAPIT/data/mdp_numeric.txt",head=T)
+myGM=read.table(file="http://zzlab.net/GAPIT/data/mdp_SNP_information.txt",head=T)
+#GWAS
+myGAPIT=GAPIT(
+Y=myY[,c(1,2,3)], #fist column is ID
+GD=myGD,
+GM=myGM,
+PCA.total=3,
+model=models,
+Multiple_analysis=TRUE)
+
+cat("GAPIT RAN SUCCESSFULLY. \n")
