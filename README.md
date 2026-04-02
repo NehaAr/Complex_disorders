@@ -13,5 +13,5 @@ Comparison after 10 replicates
 | **MLMM**    | High (0.6 → 0.95)            | Good FDR control                            | Multiple Locus Mixed Model; considers multiple SNPs simultaneously                                                            |
 | **FarmCPU** | High (0.6 → 0.9)             | Good                                        | Fixed and random effect model; iterative, reduces confounding between testing marker and covariates                           |
 | **BLINK**   | High (0.6 → 0.9)             | Good                                        | Bayesian-information and LD Iteratively Nested Keyway computational efficiency                                      |
-| **SUPER**   | Moderate → high (0.2 → 0.95) | Very good                                   | “Settlement of Multiple Effects Using Regression” in SUPER GWAS when used with FAST-LLM, improves power for large-scale GWAS |
+| **SUPER**   | Moderate → high (0.2 → 0.95) | Very good                                   | Settlement of Multiple Effects Using Regression in SUPER GWAS when used with FAST-LLM, improves power for large-scale GWAS |
 
