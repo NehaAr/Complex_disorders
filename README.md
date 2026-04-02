@@ -1,6 +1,11 @@
 # Complex_disorders
 This repository contains different computational approaches to be used in studying complex disorders
 
+#Association Studies Method Comparison
+```
+1. Traditional GWAS= GLM(single-SNP association standard Generalised Linear Regression)
+2. Polygenic versions of GWAS=MLM,MLMM,CMLM,BLINK(Multi -SNP association )
+```
 ![Comparison between different GWAS methods](/graphs/comparison_graph.png)
 
 Comparison after 10 replicates
